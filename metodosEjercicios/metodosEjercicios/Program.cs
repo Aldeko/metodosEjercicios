@@ -228,46 +228,151 @@ namespace metodosEjercicios
             //        return month;
             //}
 
-            
-                int month, year1, year2, year3;
-                Console.WriteLine("Escribe el mes");
-                month = Int32.Parse(Console.ReadLine());
-                month=CheckMonth(month);
-                Console.WriteLine("Escribe Año");
-                year1 = Int32.Parse(Console.ReadLine());
-                Console.WriteLine("Escribe Año");
-                year2 = Int32.Parse(Console.ReadLine());
-                year3 = 0;
-                ChechYear(year1, year2, year3);
-                
 
-            }
-            public static int CheckMonth(int month)
-            {
+            //    int month, year, day, maxYear, minYear;
 
-            while (month < 1 || month > 12) 
-            {
-                  
-            Console.WriteLine("El número de mes no es correcto, introduzca de nuevo");
-            month = Int32.Parse(Console.ReadLine());                   
-            }
-                
-                return month;
+            //    //Generamos un mes
+            //    month = AskMonth();
 
-            }
-             public static int CheckYear(int year1, int year2, int year3)
-            {
-            
-            if (year1>year2)
-            {
-                year3 = year1;
-                year1 = year2;
-                year2 = year3;
+            //    //Generamos un año
+            //    Console.WriteLine("Introduce un límite mínimo:");
+            //    minYear = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Introduce un límite máximo:");
+            //    maxYear = Convert.ToInt32(Console.ReadLine());
+            //    year = AskYear(minYear, maxYear);
 
-                
-            }
+            //    //Generamos día
+            //    day = AskDay(month, year);
 
-            }
-            
+            //    //Generamos el día siguiente
+            //    NextDay(day, month, year);
+
+
+            //}
+            //public static void NextDay(int day, int month, int year)
+            //{
+            //    Console.WriteLine("Fecha actual: " + day + "/" + month + "/" + year);
+
+            //    if (DateTime.IsLeapYear(year) && month == 2 && day == 29)
+            //    {
+            //        month++;
+            //        day = 1;
+
+            //    }
+            //    else if (!DateTime.IsLeapYear(year) && month == 2 && day == 28)
+            //    {
+            //        month++;
+            //        day = 1;
+            //    }
+            //    else if ((month == 4 || month == 6 || month == 9 || month == 11) && day == 30)
+            //    {
+            //        month++;
+            //        day = 1;
+            //    }
+            //    else if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10) && day == 31)
+            //    {
+            //        month++;
+            //        day = 1;
+            //    }
+            //    else if (month == 12 && day == 31)
+            //    {
+            //        year++;
+            //        month = 1;
+            //        day = 1;
+            //    }
+            //    else
+            //    {
+            //        day++;
+            //    }
+            //    Console.WriteLine("Fecha día siguiente: " + day + "/" + month + "/" + year);
+            //    Console.ReadLine();
+            //}
+
+            //public static int AskDay(int month, int year)
+            //{
+            //    int day;
+            //    bool correcto = false;
+            //    do
+            //    {
+            //        Console.WriteLine("Introduce un día");
+            //        day = Convert.ToInt32(Console.ReadLine());
+
+            //        if (DateTime.IsLeapYear(year) && month == 2)
+            //        {
+            //            if (day > 0 && day < 30)
+            //            {
+            //                correcto = true;
+            //            }
+            //        }
+            //        else if (!DateTime.IsLeapYear(year) && month == 2)
+            //        {
+
+            //            if (day > 0 && day < 29)
+            //            {
+            //                correcto = true;
+            //            }
+            //        }
+            //        else if (month == 4 || month == 6 || month == 9 || month == 11)
+            //        {
+            //            if (day > 0 && day < 31)
+            //            {
+            //                correcto = true;
+            //            }
+            //        }
+            //        else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+            //        {
+            //            if (day > 0 && day < 32)
+            //            {
+            //                correcto = true;
+            //            }
+            //        }
+
+            //    } while (!correcto);
+
+            //    return day;
+            //}
+
+
+            //public static int AskMonth()
+            //{
+            //    int month;
+            //    do
+            //    {
+            //        Console.WriteLine("Introduce un mes");
+            //        month = Convert.ToInt32(Console.ReadLine());
+
+            //    } while (month < 1 || month > 12);
+
+            //    return month;
+            //}
+
+            //public static int AskYear(int minYear, int maxYear)
+            //{
+            //    int aux, year;
+            //    Random rnd = new Random();
+
+            //    if (minYear > maxYear)
+            //    {
+            //        //Creo la variable auxiliar para guardar el valor de minYear para que
+            //        //cuando lo cambie no se pierda
+            //        aux = minYear;
+            //        minYear = maxYear;
+            //        maxYear = aux;
+            //        year = rnd.Next(minYear, maxYear + 1);
+            //        return year;
+            //    }
+            //    else
+            //    {
+            //        year = rnd.Next(minYear, maxYear + 1);
+            //        return year;
+
+
+            //    }
+            //}
+
+            //
+
         }
+
     }
+} 
